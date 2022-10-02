@@ -14,15 +14,10 @@ class LogInViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Login parameters:
-    var username = "Meow"
-    var password = "qwerty"
+    private var userName = "Meow"
+    private var password = "qwerty"
 
     // MARK: - Override functions:
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomePageVC = segue.destination as? WelcomePageViewController else { return }
         welcomePageVC.welcomeUser = "Welcome, \(String(describing: userNameTF.text ?? ""))!"
@@ -30,7 +25,7 @@ class LogInViewController: UIViewController {
 
     // MARK: - IBActions:
     @IBAction func logInButtonWasTapped() {
-        if userNameTF.text != username || passwordTF.text != password {
+        if userNameTF.text != userName || passwordTF.text != password {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
@@ -39,11 +34,11 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func forgotUserNameButtonWasTapped() {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is" + username)
+        showAlert(withTitle: "Oops!", andMessage: "Your name is " + userName)
     }
     
     @IBAction func forgotPasswordButtonWasTapped() {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is" + password)
+        showAlert(withTitle: "Oops!", andMessage: "Your password is " + password)
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
