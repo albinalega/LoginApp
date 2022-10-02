@@ -18,21 +18,12 @@ final class WelcomePageViewController: UIViewController {
                
         welcomeUserLabel.text = welcomeUser
         
-//        setGradientColor(colorOne: .purple, colorTwo: .yellow)
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
         
- 
     }
-    
-//    func setGradientColor(colorOne: UIColor, colorTwo: UIColor) {
-//        let gradient: CAGradientLayer = CAGradientLayer()
-//
-//        gradient.colors = [colorOne.cgColor, colorTwo.cgColor]
-//        gradient.locations = [0.0, 1.0]
-//        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
-//        gradient.endPoint = CGPoint(x: 0.0, y: 2.0)
-//        gradient.frame = view.bounds
-//        view.layer.addSublayer(gradient)
-//    }
     
 }
 

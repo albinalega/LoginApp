@@ -22,6 +22,10 @@ class LogInViewController: UIViewController {
         guard let welcomePageVC = segue.destination as? WelcomePageViewController else { return }
         welcomePageVC.welcomeUser = "Welcome, \(String(describing: userNameTF.text ?? ""))!"
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+    }
 
     // MARK: - IBActions:
     @IBAction func logInButtonWasTapped() {
