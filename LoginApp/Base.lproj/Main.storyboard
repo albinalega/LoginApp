@@ -16,60 +16,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-ms-CFZ">
-                                <rect key="frame" x="35" y="298" width="344" height="96"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="mTa-tO-aot">
+                                <rect key="frame" x="27" y="334.5" width="360" height="227.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YLU-Gf-Rmw">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gti-2c-6JR">
-                                        <rect key="frame" x="0.0" y="62" width="344" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Tp-bc-mzm">
-                                <rect key="frame" x="27" y="493" width="360" height="33.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxD-xF-i4J">
-                                        <rect key="frame" x="0.0" y="0.0" width="165" height="33.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-ms-CFZ">
+                                        <rect key="frame" x="10" y="0.0" width="340" height="96"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YLU-Gf-Rmw">
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gti-2c-6JR">
+                                                <rect key="frame" x="0.0" y="62" width="340" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdZ-xP-KDH">
+                                        <rect key="frame" x="135" y="123" width="90" height="44"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMJ-bX-IvM">
-                                        <rect key="frame" x="195" y="0.0" width="165" height="33.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                        </buttonConfiguration>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Tp-bc-mzm">
+                                        <rect key="frame" x="0.0" y="194" width="360" height="33.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxD-xF-i4J">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="33.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMJ-bX-IvM">
+                                                <rect key="frame" x="195" y="0.0" width="165" height="33.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="JjO-ms-CFZ" firstAttribute="leading" secondItem="mTa-tO-aot" secondAttribute="leading" constant="10" id="dLf-9R-5GB"/>
+                                    <constraint firstAttribute="trailing" secondItem="JjO-ms-CFZ" secondAttribute="trailing" constant="10" id="dl7-2I-M40"/>
+                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdZ-xP-KDH">
-                                <rect key="frame" x="162" y="426" width="90" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log In">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tp-bc-mzm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="72Y-ml-hS6"/>
-                            <constraint firstItem="6Tp-bc-mzm" firstAttribute="top" secondItem="ZdZ-xP-KDH" secondAttribute="bottom" constant="23" id="IIG-Cn-fAP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Tp-bc-mzm" secondAttribute="trailing" constant="27" id="SPQ-gy-dXZ"/>
-                            <constraint firstItem="JjO-ms-CFZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="cfY-cB-rFR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JjO-ms-CFZ" secondAttribute="trailing" constant="35" id="eYu-Qd-B3B"/>
-                            <constraint firstItem="JjO-ms-CFZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezH-6O-bHW"/>
-                            <constraint firstItem="ZdZ-xP-KDH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kaB-no-ZoP"/>
-                            <constraint firstItem="ZdZ-xP-KDH" firstAttribute="top" secondItem="JjO-ms-CFZ" secondAttribute="bottom" constant="32" id="oaF-pW-lTa"/>
-                            <constraint firstItem="6Tp-bc-mzm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qyL-Ss-gLl"/>
+                            <constraint firstItem="mTa-tO-aot" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="03F-lg-vQ5"/>
+                            <constraint firstItem="mTa-tO-aot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="6c4-o9-bQ9"/>
+                            <constraint firstItem="mTa-tO-aot" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vYL-DB-suK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mTa-tO-aot" secondAttribute="trailing" constant="27" id="xXZ-nf-Asg"/>
                         </constraints>
                     </view>
                 </viewController>
