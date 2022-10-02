@@ -14,7 +14,8 @@ class LogInViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Parametes:
-
+    var username = "Meow"
+    var password = "qwerty"
 
     // MARK: - Override functions:
     override func viewDidLoad() {
@@ -29,15 +30,22 @@ class LogInViewController: UIViewController {
 
     // MARK: - IBActions:
     @IBAction func logInButtonWasTapped() {
+        if userNameTF.text != username || passwordTF.text != password {
+            showAlert(
+                withTitle: "Invalid login or password",
+                andMessage: "Please, enter correct login and password"
+            )
+        }
         
     }
     
+    
     @IBAction func forgotUserNameButtonWasTapped() {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is Meow")
+        showAlert(withTitle: "Oops!", andMessage: "Your name is" + username)
     }
     
     @IBAction func forgotPasswordButtonWasTapped() {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is qwerty")
+        showAlert(withTitle: "Oops!", andMessage: "Your password is" + password)
     }
     
     // MARK: - Private functions:
@@ -52,6 +60,5 @@ class LogInViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-
 }
 
