@@ -13,7 +13,7 @@ class LogInViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    // MARK: - Parametes:
+    // MARK: - Login parameters:
     var username = "Meow"
     var password = "qwerty"
 
@@ -36,9 +36,7 @@ class LogInViewController: UIViewController {
                 andMessage: "Please, enter correct login and password"
             )
         }
-        
     }
-    
     
     @IBAction func forgotUserNameButtonWasTapped() {
         showAlert(withTitle: "Oops!", andMessage: "Your name is" + username)
@@ -46,6 +44,11 @@ class LogInViewController: UIViewController {
     
     @IBAction func forgotPasswordButtonWasTapped() {
         showAlert(withTitle: "Oops!", andMessage: "Your password is" + password)
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
     
     // MARK: - Private functions:
@@ -59,6 +62,8 @@ class LogInViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+        passwordTF.text = ""
     }
 }
+
 
