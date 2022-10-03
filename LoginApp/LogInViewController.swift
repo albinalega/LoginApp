@@ -14,8 +14,8 @@ class LogInViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Login parameters:
-    private var userName = "Meow"
-    private var password = "qwerty"
+    private let userName = "Meow"
+    private let password = "qwerty"
 
     // MARK: - Override functions:
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
