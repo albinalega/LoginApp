@@ -14,54 +14,57 @@ class LogInViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Login parameters:
-    private let userName = "Meow"
+    private let user = "Meow"
     private let password = "qwerty"
 
     // MARK: - Override functions:
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomePageVC = segue.destination as? WelcomePageViewController else { return }
-        welcomePageVC.welcomeUser = "Welcome, \(String(describing: userNameTF.text ?? ""))!"
+        guard let welcomeVC = segue.destination as? WelcomePageViewController else { return }
+        welcomeVC.welcomeUser = user
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
 
     // MARK: - IBActions:
-    @IBAction func logInButtonWasTapped() {
-        if userNameTF.text != userName || passwordTF.text != password {
+    @IBAction func logInButtonPressed() {
+        guard userNameTF.text == user, passwordTF.text == password else {
             showAlert(
-                withTitle: "Invalid login or password",
-                andMessage: "Please, enter correct login and password"
+                title: "Invalid login or password",
+                message: "Please, enter correct login and password",
+                textField: passwordTF
             )
+            return
         }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
-    @IBAction func forgotUserNameButtonWasTapped() {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is " + userName)
+    @IBAction func forgotRegisterData(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(title: "Oops!", message: "Your name is \(user)")
+        : showAlert(title: "Oops!", message: "Your password is \(password)")
     }
     
-    @IBAction func forgotPasswordButtonWasTapped() {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is " + password)
-    }
     
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
+    @IBAction func unwindSegue(for segue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
     }
     
     // MARK: - Private functions:
-    private func showAlert(withTitle title: String, andMessage message: String) {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) { // если параметр = nil, то параметр можно опустить при вызове функции
         let alert = UIAlertController(
             title: title,
             message: message,
             preferredStyle: .alert
         )
-        
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField?.text = ""
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
-        passwordTF.text = ""
     }
 }
 
