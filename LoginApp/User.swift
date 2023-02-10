@@ -24,14 +24,50 @@ struct User {
 struct Person {
     let name: String
     let surname: String
-    let dateOfBirth: String
-    let animal: String
+    
+    let school: MagicSchool
+
+    let photo: String
+    let bio: String
+    
+    var fullname: String {
+        "\(name) \(surname)"
+    }
     
     static func getPerson() -> Person {
-        Person(name: "Albina",
-               surname: "Lega",
-               dateOfBirth: "10.12.1998",
-               animal: "🐱"
+        Person(
+            name: "Albina",
+            surname: "Lega",
+            school: MagicSchool.getSchool(),
+            photo: "cat",
+            bio: ""
         )
     }
+}
+
+struct MagicSchool {
+    let title: String
+    let faculty: Faculty
+    let animal: Animal
+    
+    static func getSchool() -> MagicSchool {
+        MagicSchool(
+            title: "Hogwarts",
+            faculty: .gryffindor,
+            animal: .cat
+        )
+    }
+}
+
+enum Faculty: String {
+    case gryffindor = "Gryffindor"
+    case slytherin = "Slytherin"
+    case revenclaw = "Ravenclaw"
+    case hufflepuff = "Hufflepuff"
+}
+
+enum Animal: String {
+    case cat = "🐱"
+    case owl = "🦉"
+    case frog = "🐸"
 }
