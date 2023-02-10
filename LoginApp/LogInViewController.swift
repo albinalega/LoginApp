@@ -18,7 +18,12 @@ class LogInViewController: UIViewController {
     private let password = "qwerty"
 
     // MARK: - Override functions:
+    override func viewDidLoad() {
+        userNameTF.text = user
+        passwordTF.text = password
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.welcomeUser = user
     }
@@ -54,7 +59,7 @@ class LogInViewController: UIViewController {
     }
     
     // MARK: - Private functions:
-    private func showAlert(title: String, message: String, textField: UITextField? = nil) { // если параметр = nil, то параметр можно опустить при вызове функции
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(
             title: title,
             message: message,

@@ -14,6 +14,7 @@
 		557E6C9528E991FA007B6259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557E6C9428E991FA007B6259 /* Assets.xcassets */; };
 		557E6C9828E991FA007B6259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557E6C9628E991FA007B6259 /* LaunchScreen.storyboard */; };
 		557E6CA028E9C07E007B6259 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */; };
+		55EA38992996623E00F7E3A5 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA38982996623E00F7E3A5 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		557E6C9728E991FA007B6259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557E6C9928E991FA007B6259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		55EA38982996623E00F7E3A5 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				557E6C8D28E991F5007B6259 /* SceneDelegate.swift */,
 				557E6C8F28E991F5007B6259 /* LogInViewController.swift */,
 				557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */,
+				55EA38982996623E00F7E3A5 /* UserViewController.swift */,
 				557E6C9128E991F5007B6259 /* Main.storyboard */,
 				557E6C9428E991FA007B6259 /* Assets.xcassets */,
 				557E6C9628E991FA007B6259 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557E6C9028E991F5007B6259 /* LogInViewController.swift in Sources */,
+				55EA38992996623E00F7E3A5 /* UserViewController.swift in Sources */,
 				557E6C8C28E991F5007B6259 /* AppDelegate.swift in Sources */,
 				557E6CA028E9C07E007B6259 /* WelcomeViewController.swift in Sources */,
 				557E6C8E28E991F5007B6259 /* SceneDelegate.swift in Sources */,
