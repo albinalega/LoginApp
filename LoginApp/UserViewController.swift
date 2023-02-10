@@ -16,8 +16,7 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = user
-        name.text = user
-        image.image = UIImage(systemName: "cat")
-        image.layer.cornerRadius = 
+//        name.text = user
+//        image.image = UIImage(systemName: "cat")
     }
 }
