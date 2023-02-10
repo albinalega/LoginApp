@@ -30,7 +30,7 @@ struct Person {
     let photo: String
     let bio: String
     
-    var fullname: String {
+    var fullName: String {
         "\(name) \(surname)"
     }
     
@@ -39,7 +39,7 @@ struct Person {
             name: "Albina",
             surname: "Lega",
             school: MagicSchool.getSchool(),
-            photo: "cat",
+            photo: "IMG_6842",
             bio: ""
         )
     }

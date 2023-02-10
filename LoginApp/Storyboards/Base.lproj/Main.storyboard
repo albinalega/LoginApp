@@ -249,6 +249,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animal" destination="I2u-Ay-UhH" id="3b5-jb-tt9"/>
+                        <outlet property="faculty" destination="h7y-ma-Xt4" id="rPl-dJ-Yz7"/>
+                        <outlet property="image" destination="sI8-1n-L5J" id="MW9-S2-ppb"/>
+                        <outlet property="name" destination="4Yo-Kv-NNf" id="C8E-TV-UTA"/>
+                        <outlet property="school" destination="VtY-As-l8O" id="fVU-a3-MlE"/>
+                        <outlet property="surname" destination="jnX-UM-wF9" id="Y7J-3K-3tZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1O-a8-DJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,32 +265,37 @@
         <!--Bio-->
         <scene sceneID="5I2-dY-8km">
             <objects>
-                <viewController id="08q-xG-9Vp" sceneMemberID="viewController">
+                <viewController id="08q-xG-9Vp" customClass="UserBioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tgY-nk-1bN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN2-mA-8ME">
-                                <rect key="frame" x="16" y="118.5" width="288" height="526.5"/>
-                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wri-dp-qNe">
+                                <rect key="frame" x="16" y="92.5" width="288" height="356.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Eu-nT-aVH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tN2-mA-8ME" firstAttribute="top" secondItem="7Eu-nT-aVH" secondAttribute="top" constant="26" id="4Pe-v1-oB2"/>
-                            <constraint firstItem="tN2-mA-8ME" firstAttribute="leading" secondItem="7Eu-nT-aVH" secondAttribute="leading" constant="16" id="BX5-il-lcy"/>
-                            <constraint firstItem="7Eu-nT-aVH" firstAttribute="trailing" secondItem="tN2-mA-8ME" secondAttribute="trailing" constant="16" id="c2d-Ki-Rs7"/>
+                            <constraint firstItem="7Eu-nT-aVH" firstAttribute="trailing" secondItem="wri-dp-qNe" secondAttribute="trailing" constant="16" id="1FX-2P-1k5"/>
+                            <constraint firstItem="7Eu-nT-aVH" firstAttribute="bottom" secondItem="wri-dp-qNe" secondAttribute="bottom" constant="70" id="Asy-VJ-lEh"/>
+                            <constraint firstItem="wri-dp-qNe" firstAttribute="top" secondItem="7Eu-nT-aVH" secondAttribute="top" id="Jqi-Dh-ob8"/>
+                            <constraint firstItem="wri-dp-qNe" firstAttribute="leading" secondItem="7Eu-nT-aVH" secondAttribute="leading" constant="16" id="ahf-V9-43U"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bio" id="JOr-gF-nvY"/>
+                    <connections>
+                        <outlet property="userBioTextView" destination="wri-dp-qNe" id="txh-3Y-p6D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPN-yI-mAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3344.9275362318845" y="796.875"/>
+            <point key="canvasLocation" x="3343.125" y="796.47887323943667"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zgd-SV-2YW">
@@ -326,6 +339,9 @@
     </scenes>
     <resources>
         <image name="person" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

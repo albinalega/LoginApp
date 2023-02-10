@@ -8,15 +8,35 @@
 import UIKit
 
 class UserViewController: UIViewController {
-    @IBOutlet var image: UIImageView!
-    @IBOutlet var name: UILabel!
     
-    var user: User
+    @IBOutlet var image: UIImageView! {
+        didSet {
+            image.layer.cornerRadius = image.frame.height / 2
+        }
+    }
+    
+    @IBOutlet var name: UILabel!
+    @IBOutlet var surname: UILabel!
+    @IBOutlet var school: UILabel!
+    @IBOutlet var faculty: UILabel!
+    @IBOutlet var animal: UILabel!
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = user
-//        name.text = user
-//        image.image = UIImage(systemName: "cat")
+//        view.addVerticalGradientLayer()
+        title = user.person.fullName
+        image.image = UIImage(named: user.person.photo)
+        name.text = user.person.name
+        surname.text = user.person.surname
+        school.text = user.person.school.title
+        faculty.text = user.person.school.faculty.rawValue
+        animal.text = user.person.school.animal.rawValue
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let bioVC = segue.destination as? UserBioViewController else { return }
+        bioVC.user = user
     }
 }

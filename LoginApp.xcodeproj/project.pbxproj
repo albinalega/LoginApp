@@ -16,6 +16,7 @@
 		557E6C9528E991FA007B6259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557E6C9428E991FA007B6259 /* Assets.xcassets */; };
 		557E6C9828E991FA007B6259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557E6C9628E991FA007B6259 /* LaunchScreen.storyboard */; };
 		557E6CA028E9C07E007B6259 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */; };
+		5585EC0129968C9800A9322A /* UserBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5585EC0029968C9800A9322A /* UserBioViewController.swift */; };
 		55EA38992996623E00F7E3A5 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA38982996623E00F7E3A5 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		557E6C9728E991FA007B6259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557E6C9928E991FA007B6259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5585EC0029968C9800A9322A /* UserBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBioViewController.swift; sourceTree = "<group>"; };
 		55EA38982996623E00F7E3A5 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */,
 				5540B5BC29967EF900719834 /* TabBarController.swift */,
 				55EA38982996623E00F7E3A5 /* UserViewController.swift */,
+				5585EC0029968C9800A9322A /* UserBioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				557E6C8C28E991F5007B6259 /* AppDelegate.swift in Sources */,
 				5540B5BD29967EF900719834 /* TabBarController.swift in Sources */,
 				557E6CA028E9C07E007B6259 /* WelcomeViewController.swift in Sources */,
+				5585EC0129968C9800A9322A /* UserBioViewController.swift in Sources */,
 				557E6C8E28E991F5007B6259 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
