@@ -11,7 +11,7 @@ class UserViewController: UIViewController {
     @IBOutlet var image: UIImageView!
     @IBOutlet var name: UILabel!
     
-    private let user = ""
+    var user: User
 
     override func viewDidLoad() {
         super.viewDidLoad()

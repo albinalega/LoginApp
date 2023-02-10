@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5540B5B729966CE400719834 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540B5B629966CE400719834 /* User.swift */; };
+		5540B5BD29967EF900719834 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540B5BC29967EF900719834 /* TabBarController.swift */; };
 		557E6C8C28E991F5007B6259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E6C8B28E991F5007B6259 /* AppDelegate.swift */; };
 		557E6C8E28E991F5007B6259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E6C8D28E991F5007B6259 /* SceneDelegate.swift */; };
 		557E6C9028E991F5007B6259 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E6C8F28E991F5007B6259 /* LogInViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		5540B5B629966CE400719834 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5540B5BC29967EF900719834 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		557E6C8828E991F5007B6259 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557E6C8B28E991F5007B6259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557E6C8D28E991F5007B6259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				557E6C8F28E991F5007B6259 /* LogInViewController.swift */,
 				557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */,
+				5540B5BC29967EF900719834 /* TabBarController.swift */,
 				55EA38982996623E00F7E3A5 /* UserViewController.swift */,
 			);
 			path = ViewControllers;
@@ -183,6 +186,7 @@
 				55EA38992996623E00F7E3A5 /* UserViewController.swift in Sources */,
 				5540B5B729966CE400719834 /* User.swift in Sources */,
 				557E6C8C28E991F5007B6259 /* AppDelegate.swift in Sources */,
+				5540B5BD29967EF900719834 /* TabBarController.swift in Sources */,
 				557E6CA028E9C07E007B6259 /* WelcomeViewController.swift in Sources */,
 				557E6C8E28E991F5007B6259 /* SceneDelegate.swift in Sources */,
 			);
