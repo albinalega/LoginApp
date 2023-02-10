@@ -43,6 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5540B5B82996773700719834 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				557E6C8B28E991F5007B6259 /* AppDelegate.swift */,
+				557E6C8D28E991F5007B6259 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5540B5B92996774200719834 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				557E6C8F28E991F5007B6259 /* LogInViewController.swift */,
+				557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */,
+				55EA38982996623E00F7E3A5 /* UserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5540B5BA2996775C00719834 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				557E6C9128E991F5007B6259 /* Main.storyboard */,
+				557E6C9628E991FA007B6259 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5540B5BB2996776700719834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5540B5B629966CE400719834 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		557E6C7F28E991F5007B6259 = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +98,11 @@
 		557E6C8A28E991F5007B6259 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				557E6C8B28E991F5007B6259 /* AppDelegate.swift */,
-				557E6C8D28E991F5007B6259 /* SceneDelegate.swift */,
-				557E6C8F28E991F5007B6259 /* LogInViewController.swift */,
-				557E6C9F28E9C07E007B6259 /* WelcomeViewController.swift */,
-				55EA38982996623E00F7E3A5 /* UserViewController.swift */,
-				5540B5B629966CE400719834 /* User.swift */,
-				557E6C9128E991F5007B6259 /* Main.storyboard */,
+				5540B5B82996773700719834 /* App */,
+				5540B5B92996774200719834 /* ViewControllers */,
+				5540B5BB2996776700719834 /* Models */,
+				5540B5BA2996775C00719834 /* Storyboards */,
 				557E6C9428E991FA007B6259 /* Assets.xcassets */,
-				557E6C9628E991FA007B6259 /* LaunchScreen.storyboard */,
 				557E6C9928E991FA007B6259 /* Info.plist */,
 			);
 			path = LoginApp;
